@@ -9,7 +9,8 @@ const Cocktail4U = () => {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
       .then(res => res.json())
       .then(data => {
-        setCocktail(data.drinks);
+        setCocktail(data.drinks[0])
+        // console.log(data.drinks[0])
       })
       .catch(error => console.log(error))
   },[])
@@ -17,7 +18,7 @@ const Cocktail4U = () => {
 
   return (
     <>
-    <Cocktail {...cocktail[0]} />
+    <Cocktail {...cocktail} />
     </>
   )
 }

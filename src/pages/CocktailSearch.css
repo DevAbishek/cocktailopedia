@@ -1,0 +1,21 @@
+.cs-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.searchbar {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar input {
+    margin-right: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.sc-button {
+    padding: 12px;
+}

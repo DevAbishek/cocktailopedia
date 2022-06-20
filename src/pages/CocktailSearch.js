@@ -8,15 +8,15 @@ const CocktailSearch = () => {
     const [Cocktails, setCocktails] = useState([]);
     const [SearchValue, setSearchValue] = useState('')
 
-    // useEffect(() => {
-    //     fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setCocktails(data.drinks)
-    //             console.log(data.drinks)
-    //         })
-    //         .catch(error => console.log(error));
-    // }, [])
+    useEffect(() => {
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
+            .then(res => res.json())
+            .then(data => {
+                setCocktails(data.drinks)
+                console.log(data.drinks)
+            })
+            .catch(error => console.log(error));
+    }, [])
 
     function changeHandler(e) {
         e.preventDefault();

@@ -17,7 +17,9 @@ const Cocktail4U = () => {
 
   return (
     <>
+    <div style={{marginTop: "calc((25vh - 50px))"}}  >
     <Cocktail {...cocktail} />
+    </div>
     </>
   )
 }

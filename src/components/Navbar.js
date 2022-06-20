@@ -19,8 +19,8 @@ export const Navbar = () => {
 
       </div>
       <ul className='links'>
-        <li><Link to="/">Cocktail 4 You</Link></li>
-        <li><Link to="/cocktailsearch">Search a Cocktail</Link></li>
+        <li><Link to="/" onClick={handleToggle}>Cocktail 4 You</Link></li>
+        <li><Link to="/cocktailsearch" onClick={handleToggle}>Search a Cocktail</Link></li>
       </ul>
     </nav>
   )

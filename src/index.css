@@ -7,4 +7,13 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.hero-section {
+  text-align: center;
+  margin: 20px;
+}
+
+.hero-section img {
+  max-width: 1500px;
+}
+
 

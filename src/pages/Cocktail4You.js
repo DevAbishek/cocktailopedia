@@ -10,7 +10,6 @@ const Cocktail4U = () => {
       .then(res => res.json())
       .then(data => {
         setCocktail(data.drinks[0])
-        // console.log(data.drinks[0])
       })
       .catch(error => console.log(error))
   },[])

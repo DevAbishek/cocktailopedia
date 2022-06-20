@@ -19,10 +19,8 @@ export const Navbar = () => {
 
       </div>
       <ul className='links'>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to="/cocktail4u">Cocktail 4 You</Link></li>
+        <li><Link to="/">Cocktail 4 You</Link></li>
         <li><Link to="/cocktailsearch">Search a Cocktail</Link></li>
-        <li><Link to="/">Search a Ingredient</Link></li>
       </ul>
     </nav>
   )
